@@ -46,6 +46,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <executable>true</executable>
+                    <mainClass>com.nepxion.polaris.guide.service.PolarisServiceB1</mainClass>
                     <layout>JAR</layout>
                 </configuration>
                 <executions>
