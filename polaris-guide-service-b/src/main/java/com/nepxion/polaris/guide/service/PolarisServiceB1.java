@@ -10,6 +10,8 @@ import com.nepxion.polaris.framework.service.annotation.EnablePolarisService;
 @EnablePolarisService
 public class PolarisServiceB1 {
     public static void main(String[] args) {
+        System.setProperty("spring.profiles.active", "b1");
+
         new SpringApplicationBuilder(PolarisServiceB1.class).run(args);
     }
 
