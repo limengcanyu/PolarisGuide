@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>com.nepxion</groupId>
-            <artifactId>polaris-component-gray-starter-console</artifactId>
+            <artifactId>polaris-framework-starter-console</artifactId>
             <version>${polaris.version}</version>
         </dependency>
     </dependencies>
