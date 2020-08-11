@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.nepxion.discovery.common.constant.DiscoveryConstant;
+import com.nepxion.discovery.plugin.strategy.context.StrategyContextHolder;
 
 @RestController
 @ConditionalOnProperty(name = DiscoveryConstant.SPRING_APPLICATION_NAME, havingValue = "polaris-service-a")
@@ -18,6 +19,9 @@ public class AFeignImpl extends AbstractFeignImpl implements AFeign {
 
     @Autowired
     private BFeign bFeign;
+
+    @Autowired
+    private StrategyContextHolder strategyContextHolder;
 
     @Override
     @SentinelResource(value = "sentinel-resource", blockHandler = "handleBlock", fallback = "handleFallback")
@@ -30,6 +34,8 @@ public class AFeignImpl extends AbstractFeignImpl implements AFeign {
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException(e);
         }*/
+
+        LOG.info("Header token: {}, userId: {}", strategyContextHolder.getHeader("token"), strategyContextHolder.getHeader("userId"));
 
         LOG.info("调用路径：{}", value);
 
