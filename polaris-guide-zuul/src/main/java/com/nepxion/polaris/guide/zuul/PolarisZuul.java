@@ -13,7 +13,7 @@ public class PolarisZuul {
     }
 
     @Bean
-    public PolarisZuulRouteFilter solarZuulRouteFilter() {
+    public PolarisZuulRouteFilter polarisZuulRouteFilter() {
         return new PolarisZuulRouteFilter();
     }
 }
