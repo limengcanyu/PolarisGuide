@@ -3,7 +3,7 @@ package com.nepxion.polaris.guide.service.feign;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
@@ -17,7 +17,7 @@ public class BFeignImpl extends AbstractFeignImpl implements BFeign {
 
     @Override
     @SentinelResource(value = "sentinel-resource", blockHandler = "handleBlock", fallback = "handleFallback")
-    public String invoke(@PathVariable(value = "value") String value) {
+    public String invoke(@RequestBody String value) {
         value = doInvoke(value);
 
         LOG.info("调用路径：{}", value);
