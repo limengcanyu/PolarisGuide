@@ -8,7 +8,7 @@
 		{
 			"name": "Polaris网关测试用例",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [
 					{
 						"key": "n-d-version",
@@ -95,8 +95,17 @@
 						"disabled": true
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "gateway",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:5002/polaris-service-a/invoke/zuul",
+					"raw": "http://localhost:5002/polaris-service-a/invoke",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -104,8 +113,7 @@
 					"port": "5002",
 					"path": [
 						"polaris-service-a",
-						"invoke",
-						"zuul"
+						"invoke"
 					]
 				}
 			},
