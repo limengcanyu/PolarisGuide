@@ -13,7 +13,7 @@
 					{
 						"key": "n-d-version",
 						"type": "text",
-						"value": "{\"polaris-service-a\":\"solar-001\", \"polaris-service-b\":\"polaris-001\"}",
+						"value": "{\"polaris-service-a\":\"polaris-001\", \"polaris-service-b\":\"polaris-001\"}",
 						"disabled": true
 					},
 					{
