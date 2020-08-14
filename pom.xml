@@ -14,5 +14,6 @@
         <module>polaris-guide-zuul</module>
         <module>polaris-guide-service-a</module>
         <module>polaris-guide-service-b</module>
+        <module>polaris-guide-test</module>
     </modules>
 </project>

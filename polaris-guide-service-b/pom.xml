@@ -61,7 +61,7 @@
                 </executions>
             </plugin>
 
-            <plugin>
+            <!-- <plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
                 <executions>
@@ -75,7 +75,7 @@
                     <generateGitPropertiesFile>true</generateGitPropertiesFile>
                     <dateFormat>yyyyMMdd</dateFormat>
                 </configuration>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 </project>
