@@ -11,10 +11,11 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.nepxion.discovery.common.constant.DiscoveryConstant;
 import com.nepxion.discovery.plugin.strategy.context.StrategyContextHolder;
+import com.nepxion.polaris.guide.service.core.CoreImpl;
 
 @RestController
 @ConditionalOnProperty(name = DiscoveryConstant.SPRING_APPLICATION_NAME, havingValue = "polaris-service-a")
-public class AFeignImpl extends AbstractFeignImpl implements AFeign {
+public class AFeignImpl extends CoreImpl implements AFeign {
     private static final Logger LOG = LoggerFactory.getLogger(AFeignImpl.class);
 
     @Autowired
@@ -26,7 +27,7 @@ public class AFeignImpl extends AbstractFeignImpl implements AFeign {
     @Override
     @SentinelResource(value = "sentinel-resource", blockHandler = "handleBlock", fallback = "handleFallback")
     public String invoke(@RequestBody String value) {
-        value = doInvoke(value);
+        value = getPluginInfo(value);
         value = bFeign.invoke(value);
 
         /*try {

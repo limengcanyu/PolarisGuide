@@ -1,14 +1,14 @@
-package com.nepxion.polaris.guide.service.rest;
+package com.nepxion.polaris.guide.service.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.nepxion.discovery.plugin.framework.adapter.PluginAdapter;
 
-public class AbstractRestImpl {
+public class CoreImpl {
     @Autowired
     private PluginAdapter pluginAdapter;
 
-    public String doRest(String value) {
+    public String getPluginInfo(String value) {
         return pluginAdapter.getPluginInfo(value);
     }
 }
