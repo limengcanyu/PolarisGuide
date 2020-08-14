@@ -4,9 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -21,10 +20,10 @@ public class ARestImpl extends CoreImpl {
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping(path = "/rest/{value}", method = RequestMethod.GET)
-    public String rest(@PathVariable(value = "value") String value) {
+    @PostMapping(path = "/rest")
+    public String rest(@RequestBody String value) {
         value = getPluginInfo(value);
-        value = restTemplate.getForEntity("http://polaris-service-b/rest/" + value, String.class).getBody();
+        value = restTemplate.postForEntity("http://polaris-service-b/rest", value, String.class).getBody();
 
         LOG.info("调用路径：{}", value);
 
