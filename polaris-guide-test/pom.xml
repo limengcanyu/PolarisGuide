@@ -5,18 +5,19 @@
     <name>Nepxion Polaris Guide Test</name>
     <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
+    <version>0.0.1</version>
 
     <parent>
         <groupId>com.nepxion</groupId>
-        <artifactId>discovery-guide</artifactId>
+        <artifactId>polaris-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>com.nepxion</groupId>
-            <artifactId>discovery-plugin-test-starter</artifactId>
-            <version>${discovery.version}</version>
+            <artifactId>polaris-framework-starter-test</artifactId>
+            <version>${polaris.version}</version>
         </dependency>
     </dependencies>
 
@@ -34,6 +35,47 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                    <mainClass>com.nepxion.polaris.guide.service.PolarisServiceA1</mainClass>
+                    <layout>JAR</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <attach>false</attach>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- <plugin>
+                <groupId>pl.project13.maven</groupId>
+                <artifactId>git-commit-id-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>revision</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <generateGitPropertiesFile>true</generateGitPropertiesFile>
+                    <dateFormat>yyyyMMdd</dateFormat>
+                </configuration>
+            </plugin> -->
         </plugins>
     </build>
 </project>
