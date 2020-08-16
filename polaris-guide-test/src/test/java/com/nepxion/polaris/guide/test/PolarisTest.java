@@ -14,9 +14,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.nepxion.discovery.plugin.test.application.TestApplication;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = { TestApplication.class, MyTestConfiguration.class }, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class MyTest {
-    private static final Logger LOG = LoggerFactory.getLogger(MyTest.class);
+@SpringBootTest(classes = { TestApplication.class, PolarisTestConfiguration.class }, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class PolarisTest {
+    private static final Logger LOG = LoggerFactory.getLogger(PolarisTest.class);
 
     @Value("${gateway.group}")
     private String gatewayGroup;
@@ -37,7 +37,7 @@ public class MyTest {
     private String zuulTestUrl;
 
     @Autowired
-    private MyTestCases myTestCases;
+    private PolarisTestCases polarisTestCases;
 
     private static long startTime;
 
@@ -56,13 +56,13 @@ public class MyTest {
 
     @Test
     public void testVersionStrategyGray() throws Exception {
-        myTestCases.testVersionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
-        myTestCases.testVersionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
+        polarisTestCases.testVersionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
+        polarisTestCases.testVersionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
     }
 
     @Test
     public void testRegionStrategyGray() throws Exception {
-        myTestCases.testRegionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
-        myTestCases.testRegionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
+        polarisTestCases.testRegionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
+        polarisTestCases.testRegionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
     }
 }

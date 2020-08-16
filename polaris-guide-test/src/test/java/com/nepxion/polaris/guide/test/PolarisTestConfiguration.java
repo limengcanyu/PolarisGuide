@@ -4,9 +4,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class MyTestConfiguration {
+public class PolarisTestConfiguration {
     @Bean
-    public MyTestCases myTestCases() {
-        return new MyTestCases();
+    public PolarisTestCases polarisTestCases() {
+        return new PolarisTestCases();
     }
 }

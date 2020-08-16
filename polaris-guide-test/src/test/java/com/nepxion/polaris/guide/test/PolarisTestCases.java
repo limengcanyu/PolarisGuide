@@ -8,8 +8,8 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 
 import com.nepxion.discovery.plugin.test.annotation.DTestConfig;
 
-public class MyTestCases {
-    private static final Logger LOG = LoggerFactory.getLogger(MyTestCases.class);
+public class PolarisTestCases {
+    private static final Logger LOG = LoggerFactory.getLogger(PolarisTestCases.class);
 
     @Autowired
     private TestRestTemplate testRestTemplate;
