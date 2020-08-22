@@ -12,7 +12,7 @@
 @echo.
 @echo off
 
-@title Nepxion Polaris
+@title Nepxion Polaris Service A
 @color 0a
 
 @rem 只适用于Windows操作系统上

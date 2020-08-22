@@ -10,7 +10,7 @@ echo '$  Copyright (C) 2017-2050                                  $'
 echo '$                                                           $'
 echo '============================================================='
 
-echo -n $'\e'"]0;Nepxion Polaris"$'\a'
+echo -n $'\e'"]0;Nepxion Polaris Service B"$'\a'
 
 # 只适用于Windows操作系统上
 DOCKER_HOST='tcp://localhost:2375'
