@@ -8,14 +8,14 @@
     <version>0.0.1</version>
 
     <parent>
-        <groupId>com.nepxion</groupId>
+        <groupId>com.nepxion.polaris</groupId>
         <artifactId>polaris-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <dependencies>
         <dependency>
-            <groupId>com.nepxion</groupId>
+            <groupId>com.nepxion.polaris</groupId>
             <artifactId>polaris-framework-starter-service</artifactId>
             <version>${polaris.version}</version>
         </dependency>
