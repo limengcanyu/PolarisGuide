@@ -5,3 +5,11 @@
 
 ![](http://nepxion.gitee.io/docs/icon-doc/information.png) Polaris【北极星】企业级云原生微服务框架，具体技术文档参考[Polaris源码主页](https://github.com/Nepxion/Polaris)
 
+## 请联系我
+微信、公众号和文档
+
+![](http://nepxion.gitee.io/docs/zxing-doc/微信-1.jpg)![](http://nepxion.gitee.io/docs/zxing-doc/公众号-1.jpg)![](http://nepxion.gitee.io/docs/zxing-doc/文档-1.jpg)
+
+## Star走势图
+
+[![Stargazers over time](https://starchart.cc/Nepxion/Polaris.svg)](https://starchart.cc/Nepxion/Polaris)
