@@ -3,28 +3,32 @@
 # Polaris【北极星】企业级云原生微服务框架
 [![Total lines](https://tokei.rs/b1/github/Nepxion/Polaris?category=lines)](https://tokei.rs/b1/github/Nepxion/Polaris?category=lines)  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?label=license)](https://github.com/Nepxion/Polaris/blob/master/LICENSE)  [![Build Status](https://travis-ci.org/Nepxion/Discovery.svg?branch=master)](https://travis-ci.org/Nepxion/Discovery)  [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e39a24e1be740c58b83fb81763ba317)](https://www.codacy.com/project/HaojunRen/Discovery/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nepxion/Discovery&amp;utm_campaign=Badge_Grade_Dashboard)
 
-![](http://nepxion.gitee.io/docs/polaris-doc/Logo.png) Polaris【北极星】企业级云原生微服务框架文档
+![](http://nepxion.gitee.io/docs/polaris-doc/Logo64.png) Polaris【北极星】企业级云原生微服务框架
+
+① Polaris【北极星】企业级云原生微服务框架文档
 - [Polaris【北极星】企业级云原生微服务框架(PDF版)](http://nepxion.gitee.io/docs/link-doc/polaris-pdf.html)
 - [Polaris【北极星】企业级云原生微服务框架(HTML版)](http://nepxion.gitee.io/docs/link-doc/polaris-html.html)
 
-![](http://nepxion.gitee.io/docs/polaris-doc/Logo.png) Polaris【北极星】企业级云原生微服务框架源码。请访问Gitee镜像获得最佳体验
+② Polaris【北极星】企业级云原生微服务框架源码。请访问Gitee镜像获得最佳体验
 - [源码Gitee同步镜像](https://gitee.com/Nepxion/Polaris)
 - [源码Github原镜像](https://github.com/Nepxion/Polaris)
 
-![](http://nepxion.gitee.io/docs/polaris-doc/Logo.png) Polaris【北极星】企业级云原生微服务框架指南示例源码。请访问Gitee镜像获得最佳体验
+③ Polaris【北极星】企业级云原生微服务框架指南示例源码。请访问Gitee镜像获得最佳体验
 - [指南Gitee同步镜像](https://gitee.com/Nepxion/PolarisGuide)
 - [指南Github原镜像](https://github.com/Nepxion/PolarisGuide)
 
-![](http://nepxion.gitee.io/docs/discovery-doc/Logo.png) Discovery【探索】微服务企业级解决方案文档
+![](http://nepxion.gitee.io/docs/discovery-doc/Logo64.png) Discovery【探索】微服务企业级解决方案
+
+① Discovery【探索】微服务企业级解决方案文档
 - [Discovery【探索】微服务企业级解决方案(PPT版)](http://nepxion.gitee.io/docs/link-doc/discovery-ppt.html)
 - [Discovery【探索】微服务企业级解决方案(PDF版)](http://nepxion.gitee.io/docs/link-doc/discovery-pdf.html)
 - [Discovery【探索】微服务企业级解决方案(HTML版)](http://nepxion.gitee.io/docs/link-doc/discovery-html.html)
 
-![](http://nepxion.gitee.io/docs/discovery-doc/Logo.png) Discovery【探索】微服务企业级解决方案源码。请访问Gitee镜像获得最佳体验
+② Discovery【探索】微服务企业级解决方案源码。请访问Gitee镜像获得最佳体验
 - [源码Gitee同步镜像](https://gitee.com/Nepxion/Discovery)
 - [源码Github原镜像](https://github.com/Nepxion/Discovery)
 
-![](http://nepxion.gitee.io/docs/discovery-doc/Logo.png) Discovery【探索】微服务企业级解决方案指南示例源码。请访问Gitee镜像获得最佳体验
+③ Discovery【探索】微服务企业级解决方案指南示例源码。请访问Gitee镜像获得最佳体验
 - [指南Gitee同步镜像](https://gitee.com/Nepxion/DiscoveryGuide)
 - [指南Github原镜像](https://github.com/Nepxion/DiscoveryGuide)
 
