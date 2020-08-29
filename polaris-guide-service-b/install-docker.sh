@@ -24,7 +24,7 @@ CONTAINER_PORT=4001
 RUN_MODE='-i -t'
 # Nepxion Discovery旗标在Docker容器控制台上以彩色模式显示
 SHOWN_ANSI_MODE=true
-# Nepxion Discovery灰度蓝绿的版本号、区域号，子环境隔离路由的环境号的元数据
+# Nepxion Discovery灰度蓝绿的版本号、区域号，环境隔离路由的环境号的元数据
 METADATA_VERSION=my-version
 METADATA_REGION=my-region
 METADATA_ENV=my-env

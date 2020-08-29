@@ -27,7 +27,7 @@
 @set RUN_MODE=-i -t
 @rem Nepxion Discovery旗标在Docker容器控制台上以彩色模式显示
 @set SHOWN_ANSI_MODE=true
-@rem Nepxion Discovery灰度蓝绿的版本号、区域号，子环境隔离路由的环境号的元数据
+@rem Nepxion Discovery灰度蓝绿的版本号、区域号，环境隔离路由的环境号的元数据
 @set METADATA_VERSION=my-version
 @set METADATA_REGION=my-region
 @set METADATA_ENV=my-env
