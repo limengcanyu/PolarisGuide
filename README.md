@@ -62,6 +62,7 @@
 ![](http://nepxion.gitee.io/docs/icon-doc/information.png) Discovery【探索】全局订阅实施图
 
 ![](http://nepxion.gitee.io/docs/polaris-doc/GlobalSub.jpg)
+
 ## 请联系我
 微信、公众号和文档
 
