@@ -28,6 +28,7 @@ SHOWN_ANSI_MODE=true
 METADATA_VERSION=my-version
 METADATA_REGION=my-region
 METADATA_ENV=my-env
+METADATA_ZONE=my-zone
 
 if [ ! -d target ];then
   rmdir /s/q target
@@ -49,7 +50,7 @@ docker build . --tag ${IMAGE_NAME}
 
 # 安装和启动Docker容器，并自动执行端口映射
 # Windows下运行需要改成“winpty docker run”
-docker run ${RUN_MODE} -e JAVA_OPTS="-Dspring.cloud.nacos.discovery.server-addr=${NACOS_SERVER} -Dspring.cloud.nacos.config.server-addr=${NACOS_SERVER} -Dspring.cloud.sentinel.datasource.nacos.server-addr=${NACOS_SERVER} -Dnacos.server-addr=${NACOS_SERVER} -Dnepxion.banner.shown.ansi.mode=${SHOWN_ANSI_MODE} -Dmetadata.version=${METADATA_VERSION} -Dmetadata.region=${METADATA_REGION} -Dmetadata.env=${METADATA_ENV}" -e TZ="Asia/Shanghai" -p ${MACHINE_PORT}:${CONTAINER_PORT} -h ${IMAGE_NAME} --name ${IMAGE_NAME} ${IMAGE_NAME}:latest
+docker run ${RUN_MODE} -e JAVA_OPTS="-Dspring.cloud.nacos.discovery.server-addr=${NACOS_SERVER} -Dspring.cloud.nacos.config.server-addr=${NACOS_SERVER} -Dspring.cloud.sentinel.datasource.nacos.server-addr=${NACOS_SERVER} -Dnacos.server-addr=${NACOS_SERVER} -Dnepxion.banner.shown.ansi.mode=${SHOWN_ANSI_MODE} -Dmetadata.version=${METADATA_VERSION} -Dmetadata.region=${METADATA_REGION} -Dmetadata.env=${METADATA_ENV} -Dmetadata.zone=${METADATA_ZONE}" -e TZ="Asia/Shanghai" -p ${MACHINE_PORT}:${CONTAINER_PORT} -h ${IMAGE_NAME} --name ${IMAGE_NAME} ${IMAGE_NAME}:latest
 
 function pause(){
   echo 'Press any key to continue...'
