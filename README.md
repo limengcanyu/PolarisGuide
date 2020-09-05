@@ -5,6 +5,8 @@
 
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.3.3.RELEASE-blue?logo=Spring)](https://search.maven.org/artifact/org.springframework.boot/spring-boot)  [![Spring Cloud](https://img.shields.io/badge/Spring%20Cloud-Hoxton.SR8-blue?logo=Spring)](https://search.maven.org/search?q=g:org.springframework.cloud%20AND%20a:spring-cloud-dependencies&core=gav)  [![Spring Cloud Alibaba](https://img.shields.io/badge/Spring%20Cloud%20Alibaba-2.2.2.RELEASE-blue?logo=Spring)](https://search.maven.org/search?q=g:com.alibaba.cloud%20AND%20a:spring-cloud-alibaba-dependencies&core=gav)
 
+[![Polaris DOC PDF](https://img.shields.io/badge/Polaris%20Doc-PDF-brightgreen?logo=Adobe%20Acrobat%20Reader)](http://nepxion.gitee.io/docs/link-doc/polaris-pdf.html)  [![Polaris DOC HTML](https://img.shields.io/badge/Polaris%20Doc-HTML-brightgreen?logo=Microsoft%20Edge)](http://nepxion.gitee.io/docs/link-doc/polaris-html.html)
+
 ![](http://nepxion.gitee.io/docs/polaris-doc/Logo64.png) Polaris【北极星】企业级云原生微服务框架
 
 ① Polaris【北极星】企业级云原生微服务框架文档
