@@ -19,6 +19,12 @@
             <artifactId>polaris-framework-starter-service</artifactId>
             <version>${polaris.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>polaris-guide-api-b</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -64,21 +70,9 @@
                 </executions>
             </plugin>
 
-            <!-- <plugin>
-                <groupId>pl.project13.maven</groupId>
-                <artifactId>git-commit-id-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>revision</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <generateGitPropertiesFile>true</generateGitPropertiesFile>
-                    <dateFormat>yyyyMMdd</dateFormat>
-                </configuration>
-            </plugin> -->
+            <!-- <plugin> <groupId>pl.project13.maven</groupId> <artifactId>git-commit-id-plugin</artifactId> <executions> 
+                <execution> <goals> <goal>revision</goal> </goals> </execution> </executions> <configuration> <generateGitPropertiesFile>true</generateGitPropertiesFile> 
+                <dateFormat>yyyyMMdd</dateFormat> </configuration> </plugin> -->
         </plugins>
     </build>
 </project>
