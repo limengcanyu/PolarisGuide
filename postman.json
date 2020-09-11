@@ -13,7 +13,7 @@
 					{
 						"key": "n-d-version",
 						"type": "text",
-						"value": "{\"polaris-service-a\":\"polaris-001\", \"polaris-service-b\":\"polaris-001\"}",
+						"value": "{\"polaris-service-a\":\"1.1\", \"polaris-service-b\":\"1.1\"}",
 						"disabled": true
 					},
 					{
@@ -139,7 +139,7 @@
 					{
 						"key": "n-d-version",
 						"type": "text",
-						"value": "{\"polaris-service-a\":\"polaris-001\", \"polaris-service-b\":\"polaris-001\"}",
+						"value": "{\"polaris-service-a\":\"1.1\", \"polaris-service-b\":\"1.1\"}",
 						"disabled": true
 					},
 					{
