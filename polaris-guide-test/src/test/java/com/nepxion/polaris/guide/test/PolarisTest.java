@@ -51,15 +51,35 @@ public class PolarisTest {
         LOG.info("* Finished automation test in {} seconds", (System.currentTimeMillis() - startTime) / 1000);
     }
 
-    @Test
-    public void testVersionStrategyGray() throws Exception {
-        polarisTestCases.testVersionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
-        polarisTestCases.testVersionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
-    }
+//    @Test
+//    public void testANoGray() throws Exception {
+//        polarisTestCases.testNoGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
+//        polarisTestCases.testNoGray(zuulGroup, zuulServiceId, zuulTestUrl);
+//        polarisTestCases.testNoGray(gatewayGroup, gatewayGroup, gatewayTestUrl);
+//        polarisTestCases.testNoGray(zuulGroup, zuulGroup, zuulTestUrl);
+//    }
+//
+//    @Test
+//    public void testVersionStrategyGray() throws Exception {
+//        polarisTestCases.testVersionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
+//        polarisTestCases.testVersionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
+//    }
 
     @Test
     public void testRegionStrategyGray() throws Exception {
         polarisTestCases.testRegionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
         polarisTestCases.testRegionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
+    }
+
+    @Test
+    public void testSentinelAuthority1() throws Exception {
+        polarisTestCases.testSentinelAuthority1(gatewayTestUrl);
+        polarisTestCases.testSentinelAuthority1(zuulTestUrl);
+    }
+
+    @Test
+    public void testSentinelAuthority2() throws Exception {
+        polarisTestCases.testSentinelAuthority2(gatewayTestUrl);
+        polarisTestCases.testSentinelAuthority2(zuulTestUrl);
     }
 }
