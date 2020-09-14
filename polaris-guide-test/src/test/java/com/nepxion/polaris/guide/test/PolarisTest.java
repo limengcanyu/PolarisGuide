@@ -51,19 +51,19 @@ public class PolarisTest {
         LOG.info("* Finished automation test in {} seconds", (System.currentTimeMillis() - startTime) / 1000);
     }
 
-//    @Test
-//    public void testANoGray() throws Exception {
-//        polarisTestCases.testNoGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
-//        polarisTestCases.testNoGray(zuulGroup, zuulServiceId, zuulTestUrl);
-//        polarisTestCases.testNoGray(gatewayGroup, gatewayGroup, gatewayTestUrl);
-//        polarisTestCases.testNoGray(zuulGroup, zuulGroup, zuulTestUrl);
-//    }
-//
-//    @Test
-//    public void testVersionStrategyGray() throws Exception {
-//        polarisTestCases.testVersionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
-//        polarisTestCases.testVersionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
-//    }
+    @Test
+    public void testANoGray() throws Exception {
+        polarisTestCases.testNoGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
+        polarisTestCases.testNoGray(zuulGroup, zuulServiceId, zuulTestUrl);
+        polarisTestCases.testNoGray(gatewayGroup, gatewayGroup, gatewayTestUrl);
+        polarisTestCases.testNoGray(zuulGroup, zuulGroup, zuulTestUrl);
+    }
+
+    @Test
+    public void testVersionStrategyGray() throws Exception {
+        polarisTestCases.testVersionStrategyGray(gatewayGroup, gatewayServiceId, gatewayTestUrl);
+        polarisTestCases.testVersionStrategyGray(zuulGroup, zuulServiceId, zuulTestUrl);
+    }
 
     @Test
     public void testRegionStrategyGray() throws Exception {
