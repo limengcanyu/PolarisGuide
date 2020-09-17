@@ -2,8 +2,10 @@ package com.nepxion.polaris.guide.test;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.MethodSorters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ import com.nepxion.discovery.plugin.test.application.TestApplication;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = { TestApplication.class, PolarisTestConfiguration.class }, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class PolarisTest {
     private static final Logger LOG = LoggerFactory.getLogger(PolarisTest.class);
 
